@@ -12,7 +12,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 
 setup(
-    name='django-minio-backend',
+    name='ak-django-minio-backend',
     version=get_git_version(),
     packages=find_packages(),
     include_package_data=True,
