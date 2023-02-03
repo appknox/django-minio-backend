@@ -250,7 +250,7 @@ class MinioBackend(Storage):
         """
         if self.is_bucket_public:
             base_url = self.client._base_url.build("GET", self.__MINIO_REGION).geturl()
-            return f'{base_url}/{self.bucket}/{name}'
+            return f'{base_url}{self.bucket}/{name}'
         if self.same_endpoints:
             # in this scenario the fake client is not needed
             client = self.client
